@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const database = requrie('../db/database.js');
+const database = require('../db/database.js');
 //routes
 router.get("/notes", (req, res) => {
     db.getNotes()
@@ -35,4 +35,4 @@ router.delete("/notes/:id", (req, res) => {
 
 });
 
-module.exports = routers;
+module.exports = router;
